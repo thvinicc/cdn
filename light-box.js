@@ -1,4 +1,3 @@
-
 /**
  * Featherlight - ultra slim jQuery lightbox
  * Version 1.3.5 - http://noelboss.github.io/featherlight/

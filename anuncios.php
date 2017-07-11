@@ -1,33 +1,18 @@
 <?
 
-$nome=$_POST['nome'];
-
-$email=$_POST['email'];
-
-$titulo=$_POST['titulo'];
-
-$texto=$_POST['texto'];
-
-
-$Destinatario="aquivaiseuemail";
-
-
-$Titulo="$titulo";
-
-
-$mensagem1="
-
-Uma mensagem vinda do site !
-
-Algum vistante mandou essa mensagem pelo site.
-
-Nome: $nome
-
-Email: $email
-
-Mensagem: $mensagem";
-
-
-mail("$Destinatario","$Titulo", "$mensagem1","From:$email");
-
+// Coloque a mensagem que irá ser enviada para
+seu e-mail abaixo:
+$msg = "Mensagem enviada em ".date("d/m/Y").",
+os dados seguem abaixo:
+";
+while(list($campo, $valor) = each($HTTP_POST_VARS))
+{
+  $msg .= ucwords($campo).": ".$valor."
+";
+}
+// Agora iremos fazer com que o PHP envie os dados do
+Formulário para seu e-mail: 
+mail("thbrazini@gmail.com", "Assunto do
+E-mail",$msg,"From: $REMOTE_ADDR");
+echo "Seu e-mail foi enviado com sucesso. Obrigado";
 ?>

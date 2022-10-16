@@ -1,11 +1,6 @@
-const sessions = ['cytotec', 'bunda', 'abortivo']
-const searchTarget = document.querySelector('.rtcl-post');
-const submitButton = document.querySelector('.rtcl')
+var hideElm = 'citotec',
+    regex = new RegExp(hideElm, 'g');
 
-if (searchTarget.textContent.includes('session')) {
-  if (!sessions.every((session) => searchTarget.textContent.includes(session))) {
-    submitButton.setAttribute("disabled", "")
-  } else {
-    submitButton.removeAttribute('disabled')
-  }
-}
+$('#tinymce').html(function(i, html){
+  return html.replace(regex, '<span style="display:none">' + hideElm + '</span>');
+});

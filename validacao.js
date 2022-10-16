@@ -1,6 +1,6 @@
 const sessions = ['cytotec', 'bunda', 'abortivo']
-const searchTarget = document.querySelector('.body');
-const submitButton = document.querySelector('.btn btn-primary rtcl-submit-btn yp_onscreen')
+const searchTarget = document.querySelector('.rtcl-post');
+const submitButton = document.querySelector('.rtcl')
 
 if (searchTarget.textContent.includes('session')) {
   if (!sessions.every((session) => searchTarget.textContent.includes(session))) {

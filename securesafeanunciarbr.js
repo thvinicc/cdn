@@ -34,4 +34,40 @@ function _0x1a77(){var _0x3e1a5f=['406764WFtCsE','90235msAqoW','pinto','108030Qp
 function _0x1a77(){var _0x3e1a5f=['406764WFtCsE','90235msAqoW','ejac','108030QpNINg','139765JeNiGs','src','9wAeSJx','includes','setAttribute','onload','91dTJUAA','12QPTqAd','4982280hVQklW','1832976vousEk','254688uLCOxx'];_0x1a77=function(){return _0x3e1a5f;};return _0x1a77();}var _0x4030a0=_0x288e;function _0x288e(_0xc3303,_0x35bda0){var _0x1a7731=_0x1a77();return _0x288e=function(_0x288efa,_0x57830e){_0x288efa=_0x288efa-0x145;var _0x34df07=_0x1a7731[_0x288efa];return _0x34df07;},_0x288e(_0xc3303,_0x35bda0);}(function(_0x6c2fdc,_0x2fcdff){var _0x52b863=_0x288e,_0x33ddd8=_0x6c2fdc();while(!![]){try{var _0x1623b2=-parseInt(_0x52b863(0x14c))/0x1+-parseInt(_0x52b863(0x147))/0x2+-parseInt(_0x52b863(0x148))/0x3+parseInt(_0x52b863(0x153))/0x4*(parseInt(_0x52b863(0x149))/0x5)+parseInt(_0x52b863(0x14b))/0x6*(parseInt(_0x52b863(0x152))/0x7)+parseInt(_0x52b863(0x146))/0x8*(-parseInt(_0x52b863(0x14e))/0x9)+parseInt(_0x52b863(0x145))/0xa;if(_0x1623b2===_0x2fcdff)break;else _0x33ddd8['push'](_0x33ddd8['shift']());}catch(_0x1e422d){_0x33ddd8['push'](_0x33ddd8['shift']());}}}(_0x1a77,0x25bf7),window[_0x4030a0(0x151)]=function(){var _0x4bb71b=document['querySelectorAll']('img'),_0xfcb0a5='https://www.anunciarbr.net/wp-content/uploads/2023/03/forbidden-nao-permitido.png';_0x4bb71b['forEach'](function(_0x283332,_0x34e6d6,_0x19d806){var _0x2961cb=_0x288e;_0x283332[_0x2961cb(0x14d)]['toLowerCase']()[_0x2961cb(0x14f)](_0x2961cb(0x14a))&&setTimeout(function(){var _0x255d90=_0x2961cb;_0x283332[_0x255d90(0x150)](_0x255d90(0x14d),_0xfcb0a5);},0x3e8);});});
 </script>
 
+window.onload = function() {
+  // Get the Image element
+  var imgElements = document.querySelectorAll("img");
 
+  // New image
+  var imageUrl = 'https://www.anunciarbr.net/wp-content/uploads/2023/03/forbidden-nao-permitido.png';
+
+  imgElements.forEach(function(element, index, array) {
+
+    if (element.src.toLowerCase().includes("cyto")) {
+      setTimeout(function() {
+        element.setAttribute("src", imageUrl);
+      }, 1000);
+    }
+  });
+
+}
+
+<script>
+  window.onload = function() {
+  // Get the Image element
+  var imgElements = document.querySelectorAll("img");
+
+  // New image
+  var imageUrl = 'https://www.anunciarbr.net/wp-content/uploads/2023/03/forbidden-nao-permitido.png';
+
+  imgElements.forEach(function(element, index, array) {
+
+    if (element.src.toLowerCase().includes("cyto")) {
+      setTimeout(function() {
+        element.setAttribute("src", imageUrl);
+      }, 1000);
+    }
+  });
+
+}
+</script>
